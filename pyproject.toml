@@ -1,0 +1,29 @@
+[project]
+name = "sample-mcp-server"
+version = "0.1.0"
+description = "A simple MCP server built with FastMCP"
+authors = [
+    {name = "Developer", email = "dev@example.com"}
+]
+dependencies = [
+    "mcp[cli]>=1.0.0",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "C90", "I", "N", "UP", "YTT", "S", "BLE", "FBT", "B", "A", "COM", "C4", "DTZ", "T10", "EM", "EXE", "FA", "ISC", "ICN", "G", "INP", "PIE", "T20", "PYI", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID", "TCH", "INT", "ARG", "PTH", "ERA", "PD", "PGH", "PL", "TRY", "FLY", "NPY", "RUF"]
+ignore = ["S101", "T201", "PLR0913"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py", "*_test.py"]
