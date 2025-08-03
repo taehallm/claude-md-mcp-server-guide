@@ -2,8 +2,6 @@
 
 Claude Code 사용자들이 자신의 프로젝트에 맞는 **CLAUDE.md 파일을 작성**할 수 있도록 도와주는 가이드와 **FastMCP 기반 MCP 서버 개발 예제**를 포함합니다.
 
-> 🎯 **초보 개발자도 1주 안에 PoC를 만들 수 있도록** 실용적인 내용에 집중했습니다.
-
 ## 📚 포함된 내용
 
 ### 1. CLAUDE.md 작성 가이드
@@ -67,19 +65,13 @@ uv run mcp run server.py
 3. `src/resources/`에 새로운 리소스 추가
 4. `server.py`에서 도구/리소스 등록
 
-## 🎯 대상 사용자
-
-- **초보 개발자**: 1주 안에 PoC를 만들고 싶은 사람들
-- **Claude Code 사용자**: 프로젝트에 맞는 CLAUDE.md를 작성하고 싶은 사람들
-- **MCP 서버 개발자**: FastMCP로 MCP 서버를 만들고 싶은 사람들
-
-## 🔧 요구사항
+## 요구사항
 
 - Python 3.10+
 - UV 패키지 매니저
 - MCP CLI (`uv add "mcp[cli]"`)
 
-## 📝 라이선스
+## License
 
 MIT License
 
@@ -87,15 +79,7 @@ MIT License
 
 이슈나 PR을 통해 개선사항을 제안해주세요!
 
-## 🌟 이 저장소의 특징
-
-- **실용적**: 이론보다는 바로 적용할 수 있는 실용적인 내용
-- **초보자 친화적**: 복잡한 설정 없이 기본적인 내용부터 시작
-- **한국어 지원**: 한국 개발자들을 위한 친절한 한국어 가이드
-- **실제 예제**: 동작하는 MCP 서버 코드 포함
-
 ## 📚 관련 링크
 
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk)
 - [Claude Code 문서](https://docs.anthropic.com/en/docs/claude-code)
-- [FastMCP 문서](https://github.com/modelcontextprotocol/python-sdk)
